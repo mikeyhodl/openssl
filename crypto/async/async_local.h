@@ -94,11 +94,7 @@ VOID CALLBACK async_start_func_win(PVOID unused);
  */
 #define USE_SWAPCONTEXT
 #endif
-#if defined(OPENSSL_SYS_TANDEM)
-#include <tdmsig.h>
-#else
 #include <ucontext.h>
-#endif
 #ifndef USE_SWAPCONTEXT
 #include <setjmp.h>
 #endif
